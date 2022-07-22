@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function myalert()
+			{
+			alert("Details Submitted.!");
+			return;
+			}
+		</script>
+		<style>
+			form
+			{
+			border:solid 2px;
+			padding:10px;
+			margin-left:50px;
+			margin-right:50px;
+			border-radius:5px;
+			}
+			.button
+			{
+			height:30px;
+			width:100px;
+			color:white;
+			background-color:grey;
+			}
+			.button:hover
+			{color:black;}
+		</style>
+	</head>
+	<body>
+		<h1 style="font-size:40px"> REGISTRATION </h1>
+		<form action="#">
+			<fieldset>
+				<legend>Personal details</legend>
+				<p><label> First Name: <input type=name value="first name" required autofocus />*</label></p>
+				<p><label> Last Name: <input type=text /></label></p>
+				<p><label> Date of Birth: <input type=date /></label></p>
+				<p><label> E-mail: <input type=email value="123@gmail.com"></label></p>
+				<p><label> Gender: <input type="radio" name=a> Male <input type="radio" name=a> Female <input type="radio" name=a> others </label></p>
+				<p><label> Are you a RCB fan: <input type="checkbox" checked> Yes <input type="checkbox"> No </label></p>
+				<p><label> Select your city: 
+				<select><option> city </option>
+				<option> Banglore </option>
+				<option> Mumbai </option>
+				<option> Pune </option>
+				</select></label></p>
+				<hr>
+				<p><button type="submit" class="button" onclick="myalert();">submit</button></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
